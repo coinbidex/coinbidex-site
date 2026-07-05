@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} CoinBidex Ltd. All rights reserved.</p>
+          <p>© {year} Coinbidex Ltd. All rights reserved.</p>
           <p className="max-w-2xl text-center sm:text-right">
             Cryptocurrency trading involves significant risk and may not be suitable for all
             investors. Digital asset prices are volatile — you may lose part or all of your
