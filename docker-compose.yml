@@ -1,0 +1,14 @@
+name: coinbidex-site
+
+services:
+  site:
+    image: ghcr.io/coinbidex/coinbidex-site:${IMAGE_TAG:-main-latest}
+    container_name: cb_site
+    restart: always
+    ports:
+      - "127.0.0.1:3030:80"   # loopback only — host nginx proxies coinbidex.com here
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3

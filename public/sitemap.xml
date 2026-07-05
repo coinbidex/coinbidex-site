@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://coinbidex.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://coinbidex.com/markets</loc><changefreq>hourly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://coinbidex.com/crypto/bitcoin</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://coinbidex.com/crypto/ethereum</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://coinbidex.com/buy-crypto</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://coinbidex.com/exchange</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://coinbidex.com/convert</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coinbidex.com/p2p</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coinbidex.com/earn</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coinbidex.com/launchpad</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/nft</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/wallet</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/institutional</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/otc</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/api-docs</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/affiliate</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/listing</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/careers</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/press</loc><changefreq>weekly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://coinbidex.com/security</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/compliance</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/fees</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coinbidex.com/blog</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://coinbidex.com/blog/what-is-cryptocurrency</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/blog/how-to-buy-bitcoin</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/blog/crypto-security-best-practices</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/blog/how-does-staking-work</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/support</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://coinbidex.com/contact</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://coinbidex.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://coinbidex.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://coinbidex.com/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
