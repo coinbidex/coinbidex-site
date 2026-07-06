@@ -120,4 +120,11 @@ export const FOOTER_COLUMNS = [
       { label: 'Cookie Policy', to: '/cookies' },
     ],
   },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Coingecko', href: 'https://www.coingecko.com/en/coins/coinbidex?chart=type%3Dprice%26mode%3Dline%26timeframe%3Dh24' },
+      { label: 'CoinMarketCap', href: 'https://coinmarketcap.com/currencies/coinbidex/' },
+    ],
+  },
 ]
