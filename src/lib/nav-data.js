@@ -89,6 +89,8 @@ export const FOOTER_COLUMNS = [
   {
     title: 'Business',
     links: [
+      { label: 'Coingecko', href: 'https://www.coingecko.com/en/coins/coinbidex?chart=type%3Dprice%26mode%3Dline%26timeframe%3Dh24' },
+      { label: 'CoinMarketCap', href: 'https://coinmarketcap.com/currencies/coinbidex/' },
       { label: 'Institutional', to: '/institutional' },
       { label: 'OTC Desk', to: '/otc' },
       { label: 'API Documentation', to: '/api-docs' },
@@ -118,13 +120,6 @@ export const FOOTER_COLUMNS = [
       { label: 'Terms of Service', to: '/terms' },
       { label: 'Privacy Policy', to: '/privacy' },
       { label: 'Cookie Policy', to: '/cookies' },
-    ],
-  },
-  {
-    title: 'Resources',
-    links: [
-      { label: 'Coingecko', href: 'https://www.coingecko.com/en/coins/coinbidex?chart=type%3Dprice%26mode%3Dline%26timeframe%3Dh24' },
-      { label: 'CoinMarketCap', href: 'https://coinmarketcap.com/currencies/coinbidex/' },
     ],
   },
 ]
