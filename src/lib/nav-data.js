@@ -91,6 +91,7 @@ export const FOOTER_COLUMNS = [
     links: [
       { label: 'Coingecko', href: 'https://www.coingecko.com/en/coins/coinbidex?chart=type%3Dprice%26mode%3Dline%26timeframe%3Dh24' },
       { label: 'CoinMarketCap', href: 'https://coinmarketcap.com/currencies/coinbidex/' },
+          { label: 'DexScreener', href: 'https://dexscreener.com/ethereum/0x8d37C86805905B4404aEd7F74D95c1c1dc051EA2' },
       { label: 'Institutional', to: '/institutional' },
       { label: 'OTC Desk', to: '/otc' },
       { label: 'API Documentation', to: '/api-docs' },

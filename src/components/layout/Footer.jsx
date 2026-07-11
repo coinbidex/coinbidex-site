@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Twitter, Github, MessageCircle, Send, ShieldCheck, Lock } from 'lucide-react'
+import { ShieldCheck, Lock } from 'lucide-react'
+import { FaXTwitter, FaTelegram, FaGithub, FaYoutube } from 'react-icons/fa6'
 import Container from '../shared/Container'
 import Logo from '../shared/Logo'
 import { FOOTER_COLUMNS } from '../../lib/nav-data'
@@ -23,10 +24,11 @@ export default function Footer() {
               <span className="flex items-center gap-1.5"><Lock size={14} className="text-brand-400" /> 98% Cold Storage</span>
             </div>
             <div className="mt-6 flex gap-3">
-              <a href="https://twitter.com/coinbidex" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><Twitter size={16} /></a>
-              <a href="https://t.me/coinbidex" target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><Send size={16} /></a>
-              <a href="https://github.com/coinbidex" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><Github size={16} /></a>
-              <a href="#" aria-label="Community chat" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><MessageCircle size={16} /></a>
+              <a href="https://x.com/coinbidex" target="_blank" rel="noopener noreferrer" aria-label="X" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><FaXTwitter size={17} /></a>
+              <a href="https://t.me/coinbidex" target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><FaTelegram size={17} /></a>
+              <a href="https://t.me/coinbidexswap" target="_blank" rel="noopener noreferrer" aria-label="Coinbidex Swap Telegram" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><FaTelegram size={17} /></a>
+              <a href="https://github.com/coinbidex" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><FaGithub size={17} /></a>
+              <a href="https://youtube.com/@coinbidex" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-brand-500 hover:text-white transition-colors"><FaYoutube size={17} /></a>
             </div>
           </div>
 

@@ -112,12 +112,12 @@ export default function Header() {
             <div className="h-9 w-24 rounded-xl bg-surface-100 animate-pulse" />
           ) : loggedIn ? (
             <>
+              <Button href={`${TRADE_URL}/swap`} variant="ghost" size="sm">Swap</Button>
               <Button href={`${TRADE_URL}/trade`} variant="ghost" size="sm">Buy Crypto</Button>
               <AccountMenu user={user} />
             </>
           ) : (
             <>
-              <Button href={`${TRADE_URL}/swap`} variant="ghost" size="sm">Swap</Button>
               <Button href={`${TRADE_URL}/trade`} variant="ghost" size="sm">Buy Crypto</Button>
               <Button href={`${TRADE_URL}/login`} variant="ghost" size="sm">Log In</Button>
               <Button href={`${TRADE_URL}/register`} variant="primary" size="sm">Get Started</Button>
