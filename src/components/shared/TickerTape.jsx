@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, ArrowDownRight } from 'lucide-react'
 import { ASSETS, formatUsd } from '../../lib/assets-data'
-import { useLivePrices, priceFor } from '../../lib/useLivePrices'
+import { useMarketData, marketFor } from '../../lib/useLivePrices'
+import CoinIcon from './CoinIcon'
 
 /**
  * Continuous, auto-scrolling strip of live prices — the "big exchange"
@@ -10,7 +11,7 @@ import { useLivePrices, priceFor } from '../../lib/useLivePrices'
  * (see .marquee-track in index.css) is seamless.
  */
 export default function TickerTape({ dark = false, size = 'sm' }) {
-  const { prices } = useLivePrices()
+  const { market } = useMarketData()
   const items = [...ASSETS, ...ASSETS]
 
   const border = dark ? 'border-white/10' : 'border-surface-200'
@@ -22,25 +23,20 @@ export default function TickerTape({ dark = false, size = 'sm' }) {
       <div className={`pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l ${dark ? 'from-ink-950' : 'from-white'} to-transparent z-10`} />
       <div className="marquee-track flex w-max items-center gap-8 whitespace-nowrap">
         {items.map((asset, i) => {
-          const { price, change } = priceFor(prices, asset)
-          const up = change >= 0
+          const m = marketFor(market, asset)
+          const up = (m.change24h ?? 0) >= 0
           return (
             <Link
               key={`${asset.id}-${i}`}
               to={`/crypto/${asset.id}`}
               className={`flex items-center gap-2 text-sm font-medium ${dark ? 'text-white/80 hover:text-white' : 'text-ink-900/80 hover:text-ink-950'} transition-colors`}
             >
-              <span
-                className="flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold text-white"
-                style={{ backgroundColor: asset.color }}
-              >
-                {asset.symbol[0]}
-              </span>
+              <CoinIcon asset={asset} image={m.image} size="xs" />
               <span className="font-semibold">{asset.symbol}</span>
-              <span className={dark ? 'text-white/50' : 'text-ink-950/45'}>{formatUsd(price)}</span>
+              <span className={dark ? 'text-white/50' : 'text-ink-950/45'}>{formatUsd(m.price)}</span>
               <span className={`flex items-center gap-0.5 text-xs font-semibold ${up ? 'text-mint-500' : 'text-danger-500'}`}>
                 {up ? <ArrowUpRight size={13} /> : <ArrowDownRight size={13} />}
-                {Math.abs(change).toFixed(2)}%
+                {Math.abs(m.change24h ?? 0).toFixed(2)}%
               </span>
             </Link>
           )
